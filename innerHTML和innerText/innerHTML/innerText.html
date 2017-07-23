@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>innertext/innerhtml</title>
+</head>
+<script>
+//    document.getElementsByClassName("class类名")；通过元素的class类名获取元素，该方法获取到的元素也是一组，
+//    和通过标签名来获取是一样的，所以要单独获取一个元素，使用这两个方法都要加索引（下标）
+    window.onload=function () {
+        var oA=document.getElementById("a1");
+        var oBtn=document.getElementById("input1");
+
+        oBtn.onclick=function(){
+            oA.innerHTML="淘宝";
+//            oA.innerText="淘宝";
+
+//            区别：
+
+            oA.href="http://www.taobao.com";
+        }
+    }
+</script>
+
+<body>
+<a href="http://www.baidu.com" target="_blank" id="a1">百度</a>
+<input type="button" value="改变超链接地址" id="input1"/>
+
+
+</body>
+</html>
